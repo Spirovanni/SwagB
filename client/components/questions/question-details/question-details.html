@@ -1,0 +1,13 @@
+<form (submit)="saveQuestion(question)" *ng-if="question">
+  <label>Name</label>
+  <input type="text" [(ng-model)]="question.name">
+
+  <label>Description</label>
+  <input type="text" [(ng-model)]="question.description">
+
+  <label>Location</label>
+  <input type="text" [(ng-model)]="question.location">
+
+  <button type="submit">Save</button>
+  <button [router-link]="['/QuestionsList']">Cancel</button>
+</form>

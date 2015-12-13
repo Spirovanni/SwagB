@@ -1,0 +1,13 @@
+<form (submit)="saveStarty(starty)" *ng-if="starty">
+  <label>Name</label>
+  <input type="text" [(ng-model)]="starty.name">
+
+  <label>Description</label>
+  <input type="text" [(ng-model)]="starty.description">
+
+  <label>Location</label>
+  <input type="text" [(ng-model)]="starty.location">
+
+  <button type="submit">Save</button>
+  <button [router-link]="['/StartiesList']">Cancel</button>
+</form>

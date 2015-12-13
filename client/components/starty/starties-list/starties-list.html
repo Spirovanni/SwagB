@@ -1,0 +1,13 @@
+<div>
+    <starties-form style="display: inline-block"></starties-form>
+    <input type="text" #searchtext placeholder="Search by Location">
+    <button type="button" (click)="search(searchtext.value)">Search</button>
+    <ul>
+        <li *ng-for="#starty of starties">
+            <a [router-link]="['/StartyDetails', {startyId: starty._id}]">{{starty.name}}</a>
+            <p>{{starty.description}}</p>
+            <p>{{starty.location}}</p>
+            <button (click)="removeStarty(starty)">X</button>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,13 @@
+<div>
+    <questions-form style="display: inline-block"></questions-form>
+    <input type="text" #searchtext placeholder="Search by Location">
+    <button type="button" (click)="search(searchtext.value)">Search</button>
+    <ul>
+        <li *ng-for="#question of questions">
+            <a [router-link]="['/QuestionDetails', {startyId: question._id}]">{{question.name}}</a>
+            <p>{{question.description}}</p>
+            <p>{{question.location}}</p>
+            <button (click)="removeQuestion(question)">X</button>
+        </li>
+    </ul>
+</div>

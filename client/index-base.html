@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Angular 2 Example build with Firebase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple Angular 2 example made with Firebase. Vote for your favourite superhero, Batman vs Superman!">
+</head>
+<body class="grey lighten-4">
+
+<div class="center-align hide-on-small-only logo">
+    <img class="responsive-img" src="../public/logo.png">
+</div>
+<h3 class="center-align">Spirovanni</h3>
+<h5 class="center-align">AngularJS 2 Example built with Firebase</h5>
+<p class="center-align"><b>Hi there!</b> This is a simple site that makes it possible to vote for an important question: Who is better: Batman or Superman?<br/>
+You can fill out the following and form and watch whom others vote for in real time. You can only vote once, so think about your choice wisely :)<br/>
+    <small>By the way this site was built for the event Google IO Extended 2015 for demonstration purposes, but I thought people would be interested in it so I made it public.</small>
+</p>
+<div class="container">
+
+    <div class="row">
+        <div class="col s12 m6">
+            <fire-form></fire-form>
+            <firestats></firestats>
+        </div>
+        <div class="col s12 m6">
+            <starties-form class="row"></starties-form>
+            <starties-list></starties-list>
+        </div>
+    </div>
+</div>
+<footer-content></footer-content>
+</body>
+</html>
