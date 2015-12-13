@@ -5,23 +5,23 @@ import {Component, View} from 'angular2/angular2';
 
 import {FORM_DIRECTIVES, FormBuilder, Control, ControlGroup, Validators} from 'angular2/angular2';
 
-import {Starties} from 'collections/starties';
+import {Questions} from 'collections/questions';
 
 import {AccountsUI} from 'meteor-accounts-ui';
 
 @Component({
-    selector: 'starties-form'
+    selector: 'questions-form'
 })
 @View({
-    templateUrl: 'client/components/starty/starties-form/starties-form.html',
+    templateUrl: 'client/components/questions/questions-form/questions-form.html',
     directives: [FORM_DIRECTIVES, AccountsUI]
 })
-export class StartiesForm {
-    startiesForm: ControlGroup;
+export class QuestionsForm {
+    questionsForm: ControlGroup;
 
     constructor() {
         var fb = new FormBuilder();
-        this.startiesForm = fb.group({
+        this.questionsForm = fb.group({
             name: ['', Validators.required],
             description: [''],
             location: ['', Validators.required],
@@ -29,23 +29,23 @@ export class StartiesForm {
         });
     }
 
-    addStarty(starty) {
-        if (this.startiesForm.valid) {
+    addQuestions(question) {
+        if (this.questionsForm.valid) {
             if (Meteor.userId()) {
-                Starties.insert({
-                    name: starty.name,
-                    description: starty.description,
-                    location: starty.location,
-                    public: starty.public,
+                Questions.insert({
+                    name: question.name,
+                    description: question.description,
+                    location: question.location,
+                    public: question.public,
                     owner: Meteor.userId()
                 });
 
-                (<Control>this.startiesForm.controls['name']).updateValue('');
-                (<Control>this.startiesForm.controls['description']).updateValue('');
-                (<Control>this.startiesForm.controls['location']).updateValue('');
-                (<Control>this.startiesForm.controls['public']).updateValue(false);
+                (<Control>this.questionsForm.controls['name']).updateValue('');
+                (<Control>this.questionsForm.controls['description']).updateValue('');
+                (<Control>this.questionsForm.controls['location']).updateValue('');
+                (<Control>this.questionsForm.controls['public']).updateValue(false);
             } else {
-                alert('Please log in to add a starty');
+                alert('Please log in to add a question');
             }
         }
     }

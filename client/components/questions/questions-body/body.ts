@@ -14,7 +14,7 @@ import {Component, View} from 'angular2/angular2';
     // The selector is what angular internally uses
     // for `document.querySelectorAll(selector)` in our index.html
     // where, in this case, selector is the string 'app'
-    selector: 'body-content', // <body-content></body-content>
+    selector: 'question-body-content', // <question-body-content></question-body-content>
     // We need to tell Angular's compiler which directives are in our template.
     // Doing so will allow Angular to attach our behavior to an element
     // Our list of styles in our component. We may add more to compose many styles together
