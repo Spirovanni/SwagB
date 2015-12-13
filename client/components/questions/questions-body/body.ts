@@ -88,7 +88,7 @@ import {Component, View} from 'angular2/angular2';
 	        <div class="section no-pad-bot">
                 <div class="container">
                     <br><br>
-                    <h1 class="header center teal-text text-lighten-2">Spirovanni Foundation</h1>
+                    <h1 class="header center teal-text text-lighten-2">Spirovanni Home</h1>
                     <div class="row center">
                         <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
                     </div>
