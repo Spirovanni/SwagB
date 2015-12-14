@@ -4,12 +4,12 @@
 import {Component, View} from 'angular2/angular2';
 
 @Component({
-    selector: 'footer-content'
+    selector: 'questions-footer'
 })
 @View({
-    templateUrl: "client/components/question/question-footer/question-footer.html"
+    templateUrl: "client/components/questions/question-footer/question-footer.html"
 })
-export class FooterContent {
+export class QuestionsFooter {
     constructor() {
     }
 }

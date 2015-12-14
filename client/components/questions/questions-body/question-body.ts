@@ -14,7 +14,7 @@ import {Component, View} from 'angular2/angular2';
     // The selector is what angular internally uses
     // for `document.querySelectorAll(selector)` in our index.html
     // where, in this case, selector is the string 'app'
-    selector: 'question-body-content', // <question-body-content></question-body-content>
+    selector: 'question-body', // <question-body></question-body>
     // We need to tell Angular's compiler which directives are in our template.
     // Doing so will allow Angular to attach our behavior to an element
     // Our list of styles in our component. We may add more to compose many styles together
@@ -82,13 +82,13 @@ import {Component, View} from 'angular2/angular2';
     `],
     // Every Angular template is first compiled by the browser before Angular runs it's compiler
     template: `
-        <div id="index-banner" class="parallax-container">
+    <div id="index-banner" class="parallax-container">
 
 	<div class="container" id="example1">
 	        <div class="section no-pad-bot">
                 <div class="container">
                     <br><br>
-                    <h1 class="header center teal-text text-lighten-2">Spirovanni Home</h1>
+                    <h1 class="header center teal-text text-lighten-2">Spirovanni Questions</h1>
                     <div class="row center">
                         <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
                     </div>
@@ -99,7 +99,7 @@ import {Component, View} from 'angular2/angular2';
                 </div>
             </div>
 	</div>
-        </div>
+    </div>
                         <div id="myQuiz" ng-controller="QuizController">
 
                             <h1>What's your <span>player type?</span> </h1>
@@ -224,7 +224,7 @@ import {Component, View} from 'angular2/angular2';
   `
 })
 
-export class BodyContent {
+export class QuestionBody {
     constructor() {
     }
 }

@@ -29,7 +29,7 @@ export class QuestionsForm {
         });
     }
 
-    addQuestions(question) {
+    addQuestion(question) {
         if (this.questionsForm.valid) {
             if (Meteor.userId()) {
                 Questions.insert({

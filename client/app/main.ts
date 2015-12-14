@@ -8,7 +8,7 @@ import {StartiesForm} from 'client/components/starty/starties-form/starties-form
 import {FireForm} from 'client/components/starty/starties-fireform/starties-fireform';
 import {FireStats} from 'client/components/starty/starties-firestats/starties-firestats';
 import {FooterContent} from 'client/components/starty/starty-footer/footer';
-import {BodyContent} from 'client/components/starty/starty-body/body';
+import {QuestionBody} from 'client/components/questions/questions-body/question-body';
 import {NavContent} from 'client/components/starty/starty-nav/nav';
 import {StartiesList} from 'client/components/starty/starties-list/starties-list';
 import {RouterLink} from 'angular2/router';
@@ -19,7 +19,7 @@ import {MeteorComponent} from 'angular2-meteor';
 })
 @View({
     templateUrl: 'client/index.html',
-    directives: [NgFor, StartiesForm, FireStats, FireForm, NavContent, FooterContent, BodyContent, StartiesList, RouterLink]
+    directives: [NgFor, StartiesForm, FireStats, FireForm, NavContent, FooterContent, QuestionBody, StartiesList, RouterLink]
 })
 export class MainContent {
     constructor() {

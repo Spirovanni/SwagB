@@ -14,7 +14,7 @@ import {Component, View} from 'angular2/angular2';
     // The selector is what angular internally uses
     // for `document.querySelectorAll(selector)` in our index.html
     // where, in this case, selector is the string 'app'
-    selector: 'box-content', // <box-content></box-content>
+    selector: 'questions-box', // <questions-box></questions-box>
     // We need to tell Angular's compiler which directives are in our template.
     // Doing so will allow Angular to attach our behavior to an element
     // Our list of styles in our component. We may add more to compose many styles together
@@ -124,12 +124,13 @@ import {Component, View} from 'angular2/angular2';
 
                                 </div>
                             </div>
+
                         </div>
 
   `
 })
 
-export class BodyContent {
+export class QuestionsBox {
     constructor() {
     }
 }
